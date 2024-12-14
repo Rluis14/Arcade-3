@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luis Gama">
+  <title>Arcade</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div id="game-selection" class="container">
+    <h1>Arcade</h1>
+    <h2><span>Lets have some fun</span></h2>
+    <h3>What would you like to play?</h3>
+    <button type="button" onclick="playGuessingGame()">Guessing Game</button>
+    <button type="button" onclick="playMagicBall()">Magic Eight Ball</button>
+    <button type="button" onclick="playBNH()">Bear - Ninja - Hunter</button>
+  </div>
+  <div id="game-reload" style="display: none;" class="container">
+    <h1>Thank you for playing the Arcade Games</h1>
+    <h2><span>Lets have some fun!</span></h2>
+    <h3>Here are your scores! </h3>
+
+    <table cellpadding="0" cellspacing="0" class="info-table">
+      <thead>
+        <tr>
+          <th>Number of games played</th>
+          <th>Winning Games</th>
+          <th>Average Wins percent</th>
+        </tr>
+      </thead>
+      <tbody id="info-table"></tbody>
+    </table>
+    <div class="medal-container">
+      <img src="IMAGES/medal.jpg" id="medal-image" />
+      <p id="medal-text">Medal text</p>
+    </div>
+    <figure>
+      <img alt="Medal Stone">
+      <figcaption>Image by <a href="https://www.vecteezy.com/members/collaborapix " target="_blank">Collaborapix Studio</a></figcaption>
+  </figure>
+  <figure>
+    <img alt="Medal Bronze, Iron, Silicon">
+    <figcaption>Image by <a href="https://www.vecteezy.com/members/area-poser-designs22" target="_blank">Anugrah Putra Bakti Perkasa</a>.</figcaption>
+</figure>
+<figure>
+  <img alt="Background image">
+  <figcaption>Image by <a href="https://www.freepik.com/author/freepik" target="_blank">freepik</a>.</figcaption>
+</figure>
+
+    <button type="button" onclick="reloadPage()">Reload page</button>
+  </div>
+<script src="JS/script.js"></script>
+</body>
+
+</html>
